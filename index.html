@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="[Newton's Method Calculator]">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Newton's Method Calculator</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.5.3/math.min.js" ></script>
+  <script type="text/javascript" src="newt.js" ></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="row">
+      <h2>Newton's Method Calculator</h2>
+    </div>
+
+    <div class="row">
+        <div class="three columns">Function: <input type="text" value="x^3 - 2x - 5" id="funct"></div>
+        <div class="three columns">Derivative: <input type="text" value="3x^2 - 2" id="deriv"></div>
+  
+        <div class="three columns">X Value: <input type="text" value="2" id="xval"></div>
+        <div class="three columns">nth Power for X: <input type="text" value="3" id="nval"></div>
+     </div>
+
+    <div class="row">
+      <div class="two columns">
+        <button class="button-primary" onclick="newt()">Submit</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ten columns">
+        <br><h5>Output </h5><input type="text" id="finalVal">
+      </div>
+    </div>
+   
+    </div>
+
+</body>
+</html>
+
